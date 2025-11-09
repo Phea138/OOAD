@@ -1,0 +1,37 @@
+
+body{
+    background-color:#63B0D2;
+}
+
+.contain{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-left: 200px;
+
+    
+}
+.contain h3{
+    width: 50%;
+    justify-self: center;
+}
+.contain *{
+    width: 250px;
+    background-color: white;
+    border-radius: 10%;
+    text-align: center;
+   
+    transition:transform 0.4s ease;
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+.contain img{
+    width: 60%;
+    height: auto;
+}
+.contain * :hover{
+    transform: scale(1.2);
+    height: auto;
+}

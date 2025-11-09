@@ -1,0 +1,115 @@
+body{
+    padding: 0;
+    margin: auto;
+    display: flex;
+    background-color:#A9CFDF;
+}
+.category{
+    width: 20%;
+    height: 100%;
+    background-color: aliceblue;
+    border-right: 2px solid rgba(109, 107, 107, 0.593);
+}
+.school{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.school img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+.list-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background 0.3s;
+    cursor: pointer;
+    line-height: 72.7px;
+}
+
+/* icon style */
+.list-item img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(0);
+    /* normal color (black) */
+    transition: filter 0.3s;
+    margin-right: 10px;
+}
+
+/* link style */
+.list-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* hover effect — only that li's icon and text change */
+.list-item li:hover img {
+    filter: brightness(0) invert(1);
+    /* makes icon white */
+}
+
+.list-item li:hover a {
+    color: white;
+    /* makes text white too (optional) */
+    background-color: transparent;
+}
+.list-item li:hover {
+    background-color:#63B0D2;
+    border-radius: 8px;
+}
+
+/*Right Page*/
+
+.navbar{
+    display: flex;
+    gap: 267px;
+    width: 100.2%;
+    height: auto;
+    background-color: #F7F5FB;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid grey;
+}
+.search{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.search img{
+    width: 20px;
+    height: 20px;
+}
+.search input{
+    border-radius: 10px;
+    width:290px;
+    height: 3vh;
+    padding: 4px;
+    border: 1px solid grey;
+}
+.profile{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.profile img{
+    width: 70px;
+    height: 70px;
+    filter: brightness(0) invert(0);
+}
+.profile .name p{
+    margin-top: -15%;
+}

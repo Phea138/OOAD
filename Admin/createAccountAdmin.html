@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in as Admin</title>
+    <link rel="stylesheet" href="adminStyle.css">
+</head>
+<body>
+    <div class="login">
+        <div class="profile">
+            <h3>Admin</h3>
+            <img src="../img/Admin.png" alt="">
+        </div>
+        <div class="form">
+            <h3>Create Account:</h3>
+            <form action="">
+                <input type="text" placeholder="First Name">
+                <input type="email" placeholder="Email">
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Enter password">
+                    <img src="../img/Eye off.png" alt="Show Password" id="togglePassword">
+                </div>
+                
+                <button type="submit">Sign up</button>
+    
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const passwordInput = document.getElementById("password");
+        const toggleIcon = document.getElementById("togglePassword");
+
+        toggleIcon.onclick = function () {
+            const type = passwordInput.type === "password" ? "text" : "password";
+            passwordInput.type = type;
+        };
+    </script>
+</body>
+</html>
