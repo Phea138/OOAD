@@ -35,7 +35,7 @@ body{
     padding: 10px;
     transition: background 0.3s;
     cursor: pointer;
-    line-height: 72.7px;
+    line-height: 102px;
 }
 
 /* icon style */
@@ -74,10 +74,14 @@ body{
 
 /*Right Page*/
 
+.content{
+    width: 78%;
+    height: auto;
+}
 .navbar{
     display: flex;
     gap: 267px;
-    width: 100.2%;
+    width: 100.7%;
     height: auto;
     background-color: #F7F5FB;
     align-items: center;
@@ -112,4 +116,120 @@ body{
 }
 .profile .name p{
     margin-top: -15%;
+}
+
+/*Content*/
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    justify-items: center;
+    height: 8vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+  justify-content: space-around;
+}
+.card img{
+    width: 30px;
+    height: 30px;
+ 
+    border-radius: 50%;
+    background-color:#1582FF
+
+}
+.card .data{
+
+    width: 250px;
+    height: 5vh;
+    border-left: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.card .data h2{
+    font-size: 18px;
+    
+}
+
+.card small {
+    color: #64748b;
+    display: block;
+}
+
+.card h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.section h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.teacher-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.teacher-table th,
+.teacher-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.teacher-table th {
+    color: #64748b;
+    font-weight: 500;
+}
+
+.actions button {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background: none;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.chart-placeholder {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    background: #f8fafc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.chart-placeholder img{
+    position: relative;
+}
+.chart-placeholder h2{
+    position: absolute;
+    color: black;
+    font-weight: 1000;
 }
