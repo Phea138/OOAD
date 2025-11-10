@@ -36,8 +36,21 @@ body{
     transition: background 0.3s;
     cursor: pointer;
     line-height: 73px;
+
 }
 
+.list-item li:nth-child(1){
+    background-color: #63B0D2;
+    border-radius: 8px;
+    
+}
+.list-item li:nth-child(1) img{
+    filter: brightness(0) invert(1);
+}
+.list-item li:nth-child(1) a{
+    color: white;
+    background-color: transparent;
+}
 /* icon style */
 .list-item img {
     width: 24px;
