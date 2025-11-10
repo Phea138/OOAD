@@ -35,7 +35,7 @@ body{
     padding: 10px;
     transition: background 0.3s;
     cursor: pointer;
-    line-height: 102px;
+    line-height: 73px;
 }
 
 /* icon style */
@@ -56,7 +56,6 @@ body{
     transition: color 0.3s;
 }
 
-/* hover effect — only that li's icon and text change */
 .list-item li:hover img {
     filter: brightness(0) invert(1);
     /* makes icon white */
@@ -64,7 +63,6 @@ body{
 
 .list-item li:hover a {
     color: white;
-    /* makes text white too (optional) */
     background-color: transparent;
 }
 .list-item li:hover {
@@ -82,7 +80,7 @@ body{
     display: flex;
     gap: 267px;
     width: 100.7%;
-    height: auto;
+    height: 8vh;
     background-color: #F7F5FB;
     align-items: center;
     padding: 10px;
@@ -124,8 +122,8 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    margin: 20px 30px 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .card {
@@ -133,7 +131,7 @@ body{
     border-radius: 12px;
     padding: 10px;
     justify-items: center;
-    height: 8vh;
+    height: 7vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
@@ -181,6 +179,7 @@ body{
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .section h3 {
     margin-bottom: 10px;
